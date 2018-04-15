@@ -1,0 +1,14 @@
+# подавить ошибки php
+
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+php_value docref_root 0
+php_value docref_ext 0
+
+# Если это папка или файл, открываем его
+AddDefaultCharset utf-8
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# В противном случае перенаправляем на index.php
+RewriteRule . index.php

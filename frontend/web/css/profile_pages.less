@@ -1,0 +1,380 @@
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+  @font-face{
+    font-family: @family;
+    src:url('../fonts/@{filename}.eot');
+    src:url('../fonts/@{filename}.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/@{filename}.woff') format('woff'),
+        url('../fonts/@{filename}.ttf') format('truetype'),
+        url('../fonts/@{filename}.svg#@{filename}') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
+.font-face(franklin-gothic-medi-cond);
+.font-face(helios);
+
+/*Styles for mini logo and stars begin*/
+.wrap_circle_user {
+    position: relative;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+
+    .mini_circle_user {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        .blank {
+            background: url("../img/sprite_myhouse.png") no-repeat scroll -418px -87px transparent;
+            width: 100%;
+            height: 100%; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+
+    }
+
+    .red {
+        background: url("../img/star_mini_red_blank.png") no-repeat scroll 0 0 transparent;
+    }
+
+    .blue {
+        background: url("../img/star_mini_blue_blank.png") no-repeat scroll 0 0 transparent;
+    }
+
+    .green {
+        background: url("../img/star_mini_green_blank.png") no-repeat scroll 0 0 transparent;
+    }
+
+    .mini_circle {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        
+        .mini_star {
+            width: 22px;
+            height: 22px;
+            background: url("../img/star_mini.png") no-repeat scroll -1px -1px transparent;
+            position: absolute;
+        }
+
+        .mini_star_1 {
+            left: 20px;
+            top: -8px;
+        }
+
+        .mini_star_2 {
+            left: 35px;
+            top: -6px;
+        }
+
+        .mini_star_3 {
+            left: 46px;
+            top: 4px;
+        }
+
+        .mini_star_4 {
+            left: 51px;
+            top: 15px;
+        }
+
+        .mini_star_5 {
+            left: 52px;
+            top: 28px;
+        }
+
+        .mini_star_6 {
+            left: 46px;
+            top: 41px;
+        }
+
+        .mini_star_7 {
+            left: 36px;
+            top: 49px;
+        }
+
+        .mini_star_8 {
+            left: 25px;
+            top: 54px;
+        }
+
+        .mini_star_9 {
+            left: 12px;
+            top: 52px;
+        }
+
+        .mini_star_10 {
+            left: 1px;
+            top: 47px;
+        }
+
+        .mini_star_11 {
+            left: -7px;
+            top: 38px;
+        }
+
+        .mini_star_12 {
+            left: -11px;
+            top: 27px;
+        }
+
+        .mini_star_13 {
+            left: -9px;
+            top: 15px;
+        }
+
+        .mini_star_14 {
+            left: -3px;
+            top: 4px;
+        }
+
+        .mini_star_15 {
+            left: 7px;
+            top: -5px;
+        }
+
+    }
+
+    .online_mini {
+        background: url("../img/min_circle_online.png") no-repeat scroll 0 0 transparent;
+        width: 18px;
+        height: 18px;
+        top: -8px;
+        left: -10px;
+        z-index: 3;
+        position: absolute;
+    }
+
+}
+
+/*Styles for mini logo and stars end*/
+
+
+#profile {
+    
+    #wrapper {
+        margin: 0 auto;
+        width: 1140px;
+    }
+        
+    #header {
+        width: 100%;
+        height: 95px;
+        
+        #logo {
+            width: 635px; height: 100%;
+            float: left;
+            
+            a {
+                display: block; width: 199px; height: 68px;
+                background: url("../img/sprite_myhouse.png") no-repeat scroll 0 0 transparent; margin: 19px 0 0 50px;
+                float: left;
+            }
+        }
+
+        #wrpa_info {
+            width: 445px; float: left; margin: 24px 0 0;
+            
+            p {
+                color: #fff700; font-size: 32px;
+                font-family: franklin-gothic-medi-cond;
+                width: 100%;
+                display: flex;
+
+                i {
+                    font-family: franklin-gothic-medi-cond;
+                    font-size: 18px; color: #FFFFFF;
+                }
+            }
+
+        }
+
+        #exit {
+            float: left; height: 100%;
+            width: 60px;
+            
+            a {
+                font-family: helios;
+                color: #FFFFFF;
+                font-size: 13px;
+                line-height: 40px;
+            }
+        }
+
+    }
+
+
+    .mycontainer {
+        width: 100%; float: left;
+    
+        #left_column {
+            width: 285px; float: left;
+            
+            nav {
+                width: 100%; float: left;
+                
+                ul {
+                    list-style: none;
+                    width: 245px;
+                    margin: 35px 0 0 40px;
+                    
+                    li:first-child {
+                        margin: 0;
+                    }
+
+                    li {
+                        width: 100%;
+                        float: left;
+                        margin: 17px 0 0;
+                        position: relative;
+                        
+                        a {
+                            font-size: 20px; color: #000000;
+                            font-family: akrobat-semiBold;
+                            line-height: 18px;
+                            text-decoration: none;
+                        }
+
+                        i {
+                            width: 21px; height: 22px;
+                            display: block;
+                            float: left;
+                            margin: 0 8px 0 0;
+                        }
+
+                        span {
+                            border-radius: 8px;
+                            background-color: #d3e8f3;
+                            padding: 4px 8px;
+                            font-family: akrobat-semiBold;
+                            font-size: 18px;
+                            position: absolute;
+                            left: 170px;
+                        }
+
+                    }
+
+                    li#item_house {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -198px 0px transparent;
+                        }
+                        
+                    }
+                    
+                    li#item_news {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -198px -22px transparent;
+                        }
+                    }
+
+                    li#item_dialogues {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -198px -42px transparent;
+                        }
+                    }
+
+                    li#item_myjob {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -240px 0px transparent;
+                        }
+                    }
+
+                    li#item_finance {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -219px 0px transparent;
+                        }
+                    }
+
+                    li#item_friends {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -219px -22px transparent;
+                        }
+                    }
+
+                    li#item_safe {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -219px -42px transparent;
+                        }
+                    }
+
+                    li#item_mission {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -240px -22px transparent;
+                        }
+                    }
+
+                    li#item_tickets {
+                        
+                        i {
+                            background: url("../img/sprite_myhouse.png") no-repeat scroll -240px -42px transparent;
+                        }
+                    }
+
+
+                }
+
+            }
+
+            #bottom_links, #bottom_links ul, #bottom_links li {
+                width: 100%; float: left;
+            }
+
+            #bottom_links {
+                margin: 85px 0 0;
+                
+                ul {
+                    margin: 0 0 0 40px;
+                    list-style: none;
+                    
+                    li:first-child {
+                        margin: 0 0 24px 0;
+                    }
+
+                    li {
+                        text-align: left;
+                        
+                        a {
+                            font-size: 16px;
+                            text-decoration: none;
+                            font-family: helios;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+}

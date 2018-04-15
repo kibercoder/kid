@@ -1,0 +1,36 @@
+<html><head><title>WebSocket</title>
+<style type="text/css">
+html,body {
+	font:normal 0.9em arial,helvetica;
+}
+#log {
+	width:600px; 
+	height:300px; 
+	border:1px solid #7F9DB9; 
+	overflow:auto;
+}
+#msg {
+	width:400px;
+}
+</style>
+<script type="text/javascript">
+ws = new WebSocket("ws://127.0.0.1:2346");
+ws.onopen = function() {
+    alert("connection success");
+    ws.send('tom');
+};
+ws.onmessage = function(e) {
+    alert("recv message from server：" + e.data);
+};
+</script>
+
+</head>
+<body onload="init()">
+<h3>WebSocket v2.00</h3>
+<div id="log"></div>
+<input id="msg" type="textbox" onkeypress="onkey(event)"/>
+<button onclick="send()">Send</button>
+<button onclick="quit()">Quit</button>
+<button onclick="reconnect()">Reconnect</button>
+</body>
+</html>

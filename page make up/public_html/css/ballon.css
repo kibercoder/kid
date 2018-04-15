@@ -1,0 +1,136 @@
+.map-ballon {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+.map-ballon h2 {
+  font-size: 28px;
+  padding: 8px 0 8px 0px;
+  text-align: center;
+  width: 100%;
+}
+.map-ballon .wrap {
+  position: relative;
+  z-index: 2;
+  padding: 20px 12px 6px;
+  font-family: 'SansRoundedC', Arial, sans-serif;
+}
+.map-ballon .delimiter {
+  padding: 0 0 15px 50%;
+  font-size: 0;
+  background: url('/img/map-ballon-delimiter.png') no-repeat;
+}
+.map-ballon .delimiter div {
+  height: 2px;
+  line-height: 2px;
+  background: url('/img/map-ballon-delimiter.png') right top;
+}
+.map-ballon .notice {
+  zoom: 1;
+  margin: 5px 0 0 0;
+}
+.map-ballon .notice:after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.map-ballon .notice li {
+  float: left;
+  width: 100%;
+  /*width: 33.3%;*/
+
+  /*min-height: 64px;*/
+   min-height: 45px;
+  /*padding: 4px 0 0 0;*/
+  padding: 10px 0 0 0;
+  text-align: center;
+  /*background: url('/img/map-ballon-notice-delimiter.png') no-repeat right center;*/
+  list-style-type: none;
+}
+.map-ballon .notice li a {
+  text-decoration: none;
+}
+
+.map-ballon .wrap {
+  min-width: 140px;
+}
+
+.map-ballon .wrap,
+.map-ballon .notice li a {
+  color: #fff;
+  font-size: 16px;
+  -webkit-text-shadow: 0 0 2px #e53120;
+  -moz-text-shadow: 0 0 2px #e53120;
+  text-shadow: 0 0 2px #e53120;
+}
+.map-ballon .bg {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 82%;
+}
+.map-ballon .bg .tl,
+.map-ballon .bg .tr,
+.map-ballon .bg .bl,
+.map-ballon .bg .br {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 50%;
+  height: 25px;
+  background-image: url('/img/map-ballon.png');
+}
+.map-ballon .bg .tl {
+  left: 0;
+  top: 0;
+  background-position: 0 0;
+}
+.map-ballon .bg .tr {
+  right: 0;
+  top: 0;
+  background-position: top right;
+}
+.map-ballon .bg .bl {
+  left: 0;
+  bottom: -25px;
+  z-index: 1;
+  height: 100%;
+  background-position: bottom left;
+}
+.map-ballon .bg .br {
+  right: 0;
+  bottom: -25px;
+  z-index: 1;
+  height: 100%;
+  background-position: bottom right;
+}
+.map-ballon .bg .ar {
+  position: absolute;
+  left: 50%;
+  bottom: -45px;
+  z-index: 3;
+  display: block;
+  width: 100px;
+  height: 60px;
+  margin-left: -50px;
+  background-image: url('/img/map-ballon-arrow.png');
+}
+
+.ui-tooltip{
+  visibility:hidden!important; position:static!important; float:left!important
+}
+
+.ui-tooltip {
+  position:absolute;left:-28000px; top:-28000px; max-width:280px; min-width:50px; font-size:10.5px;line-height:12px;
+}
+
+.ui-tooltip-content{
+  position: absolute; padding: 0px 5px 24px; overflow:hidden; text-align:left; word-wrap:break-word; display: inline-block; z-index: 110; /*opacity: 0.0;*/
+}
+
+.ui-tooltip-titlebar{
+  position:relative; min-height:14px; padding:5px 35px 5px 10px; overflow:hidden; border-w;
+}

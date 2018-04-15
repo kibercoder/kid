@@ -1,0 +1,213 @@
+/*@media only screen and (max-width: 600px) {*/
+
+	nav#mainmenu a i.center_part {
+	    font-size: 22px !important;
+	}
+
+	#left_block #board2 ul ol {
+		font-size: 28px !important;
+	}
+
+	body #wrapper #wrap_site {
+		width: 980px !important;
+	}
+
+	#signup .mywrap #header .row .col2 .balun
+	{
+		line-height: 22px !important;
+		font-size: 21px;
+	}
+
+	#signup .mywrap .mycontainer form#form-signup #table_conteiner tr td {
+		padding: 25px 0 0 !important;
+	}
+
+	#signup .mywrap .mycontainer form#form-signup #table_conteiner tr td .buttons a,
+	#signup .mywrap .mycontainer form#form-signup #table_conteiner tr td .buttons .btn {
+		font-size: 32px !important;
+		text-align: center;
+	}
+
+	#signup .mywrap .mycontainer form#form-signup #table_conteiner tr td .control-label {
+		font-size: 32px !important;
+	}
+
+	#signup .mywrap .mycontainer form#form-signup #table_conteiner tr td .label-group .name_field {
+		font-size: 32px !important;
+	}
+
+	#signup .mywrap .mycontainer form#form-signup #table_conteiner tr td label.checkbox_label {
+		font-size: 32px !important;
+	}
+
+	#signup .mywrap .mycontainer form#form-signup #table_conteiner tr td label.checkbox_label .form-group {
+		width: 220px !important;
+		float: left !important;
+	}
+
+	label.checkbox_label input[type="checkbox"] + i {
+		left: 220px !important;
+		position: absolute !important;
+	}
+
+	label.checkbox_label input[type="checkbox"] + i {
+		    background: url("../../img/checkbox_big.png") no-repeat scroll 0 0 transparent !important;
+		    width: 84px !important;
+		    height: 84px !important;
+	}
+
+	label.checkbox_label input[type="checkbox"]:checked + i {
+		background: url("../../img/checkbox_big.png") no-repeat scroll 0 -84px transparent !important;
+	}
+
+	#signup .mywrap .mycontainer form#form-signup #table_conteiner tr td .choice {
+		font-size: 32px !important;
+	}
+
+	/*#signup .datepicker {
+		margin-top: -12px;
+		left: 0 !important;
+		right: 0 !important;
+		margin: -12px auto 0  auto;
+	}
+
+	#signup .datepicker .datepicker-months table tr td, 
+	#signup .datepicker .datepicker-months table tr th,
+	#signup .datepicker .datepicker-years table tr td, 
+	#signup .datepicker .datepicker-years table tr th {
+		width: 252px !important;
+	}
+
+	#signup .datepicker .datepicker-days table tr td, 
+	#signup .datepicker .datepicker-days table tr th {
+		width: 105px !important;
+	}*/
+
+	#signup .datepicker .datepicker-months table tr td, 
+	#signup .datepicker .datepicker-years table tr td {
+		width: 500px !important;
+	}
+
+	#signup .datepicker .datepicker-months table tr td span, 
+	#signup .datepicker .datepicker-years table tr td span {
+		margin: 5% !important; font-size: 30px !important; border: 1px #000 outset;
+		padding: 10px !important;
+	}
+
+	#signup .datepicker .datepicker-days table td {
+		width: 80px;
+	}
+
+	#signup .datepicker .datepicker-days table tr td {
+		margin: 5% !important; font-size: 30px !important; border: 1px #000 outset;
+		padding: 30px 5px !important;
+	}
+
+	#signup .datepicker .datepicker-months table tr th, 
+	#signup .datepicker .datepicker-years table tr th,
+	#signup .datepicker .datepicker-days table tr th {
+		font-size: 30px !important;
+	}
+
+	#signup .datepicker .datepicker-months table tr th:first-child, 
+	#signup .datepicker .datepicker-years table tr th:first-child,
+	#signup .datepicker .datepicker-days table tr th:first-child {
+		text-align: left; font-size: 40px !important; text-indent: 15px;
+		background-color: #EEE;
+		padding: 35px 15px;
+	}
+
+	#signup .datepicker .datepicker-months table tr th:last-child, 
+	#signup .datepicker .datepicker-years table tr th:last-child,
+	#signup .datepicker .datepicker-days table tr th:last-child {
+		font-size: 40px !important; text-align: center; background-color: #EEE;
+		padding: 35px 15px;
+	}
+
+	#signup .datepicker table tr td span.disabled,
+	#signup .datepicker table tr td span.disabled:hover {
+		color: #FF0000 !important;
+	}
+
+	#signup .datepicker table tr td.disabled, 
+	#signup .datepicker table tr td.disabled:hover {
+		color: #FF0000 !important;
+	}
+
+	#signup #src_galery {
+		width: 80% !important;
+		opacity: 1.0 !important;
+		background-color: #FFFFFF !important;
+	}
+
+	#signup #src_galery td img {
+		width: 165px !important;
+	}
+
+	#signup #src_galery td:hover img {
+		width: 145px !important;
+	}
+
+	#signup #wraper_window {
+
+	}
+
+	#signup #src_galery i {
+	    width: 70px !important;
+	    height: 70px !important;
+	    font-size: 110px !important;
+	    line-height: 50px !important;
+	}
+
+	#signup #src_galery .list_avatars th {
+		
+	}
+
+    #signup td .label-group {
+        float: none !important;
+    }
+
+    #signup td .choice {
+        text-align: left !important;
+        font-size: 32px !important;
+        cursor: pointer !important;
+    }
+
+    #signup td .label-group .selected_avatar {
+        width: 205px !important;
+    }
+
+    #signup td .field-signupform-confirm, 
+    #signup td .field-signupform-accept_rules {
+    	font-size: 32px !important;
+    }
+
+    #signup td .field-signupform-confirm .help-block-error, 
+    #signup td .field-signupform-accept_rules .help-block-error {
+    	white-space: normal !important;
+    	background-color: #FFFFFF;
+    	border-radius: 12px;
+    }
+
+    #signup td .help-block-error {
+    	font-size: 32px !important;
+    	background-color: #FFFFFF;
+    	border-radius: 12px;
+    	color: #000000 !important;
+    	z-index: 10 !important;
+    }
+
+	#signup td#captcha_user img {
+		width: 215px !important;
+	}
+
+	#src_galery .list_avatars tfoot td {
+		padding: 60px 0 0;
+	}
+
+	#src_galery .list_avatars tfoot td label {
+		font-size: 42px;
+	}
+
+
+/*}*/

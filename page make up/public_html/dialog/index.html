@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Диалог</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css?v=3">
+  <link rel="stylesheet" type="text/css" href="css/dialog.css?v=9">
+</head>
+<body>
+
+<header class="header header_dialog" id="header">
+  <div class="wrapper">
+    <div class="header__logo">
+      <a class="header__logo-link" href="javascript:void(0)"></a>
+    </div>
+    <div class="header__panel">
+      <a class="header__back" href="javascript:void(0)"></a>
+      <a class="header__friend" href="javascript:void(0)">Грейс Келли</a>
+      <p class="header__last-visit">Последний визит 11 часов назад</p>
+      <button class="header__logout" type="button">Выйти</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper wrapper_main">
+  
+  <nav class="nav">
+    <ul>
+      <li class="nav__item"><a href="javascript:void(0)">Мой дом</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Новости</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Диалоги <span id="dialogs">12</span></a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Моя работа</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Финансы</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Друзья <span id="friends">4</span></a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Сейф</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Миссия <span id="missions">1</span></a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Билеты <span id="tickets">2</span></a></li>
+    </ul>
+    <ul>
+      <li class="nav__item_last"><a href="javascript:void(0)">Настройки аккаунта</a></li>
+      <li class="nav__item_last"><a href="javascript:void(0)">На главную</a></li>
+    </ul>
+  </nav>
+
+  <div class="dialog">
+
+    <div class="dialog__body">
+
+      <div class="dialog__one-day">
+
+        <time class="dialog__date">Суббота, 10 февраля 2018</time>
+
+        <div class="message message_friend">
+          <div class="level-wrap">
+            <div class="avatar red">
+              <img src="img/user2.jpg" alt="">
+            </div>
+            <div class="level level_small">
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+            </div>
+          </div>
+          <div class="message__body">
+            <a class="message__username" href="javascript:void(0)">Грейс Келли</a>
+            <ul class="message__list">
+              <li class="message__item">
+                <p class="message__text">Давай завтра поедем на шашлыки к кириллу</p>
+                <time class="message__time">21:05</time>
+              </li>
+              <li class="message__item">
+                <p class="message__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <time class="message__time">21:10</time>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="dialog__one-day">
+
+        <time class="dialog__date">Воскресенье, 11 февраля 2018</time>
+
+        <div class="message message_user">
+          <div class="level-wrap">
+            <div class="avatar red">
+              <img src="img/user.jpg" alt="">
+            </div>
+            <div class="level level_small">
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+            </div>
+          </div>
+          <div class="message__body">
+            <a class="message__username" href="javascript:void(0)">Медвежонок</a>
+            <ul class="message__list">
+              <li class="message__item">
+                <p class="message__text">Извини, но не получится..</p>
+                <time class="message__time">21:05</time>
+              </li>
+              <li class="message__item">
+                <p class="message__text">Хочу пойти на выборы завтра</p>
+                <time class="message__time">21:10</time>
+              </li>
+              <li class="message__item">
+                <img class="message__image" src="img/post1.jpg" alt="">
+                <time class="message__time">21:10</time>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="message message_friend">
+          <div class="level-wrap">
+            <div class="avatar red">
+              <img src="img/user2.jpg" alt="">
+            </div>
+            <div class="level level_small">
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+            </div>
+          </div>
+          <div class="message__body">
+            <a class="message__username" href="javascript:void(0)">Грейс Келли</a>
+            <ul class="message__list">
+              <li class="message__item">
+                <p class="message__text">Давай завтра поедем на шашлыки к кириллу</p>
+                <time class="message__time">21:05</time>
+              </li>
+              <li class="message__item">
+                <p class="message__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <time class="message__time">21:10</time>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="dialog__one-day">
+
+        <time class="dialog__date">Понедельник, 12 февраля 2018</time>
+
+        <div class="message message_user">
+          <div class="level-wrap">
+            <div class="avatar red">
+              <img src="img/user.jpg" alt="">
+            </div>
+            <div class="level level_small">
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+              <span class="level__star"></span>
+            </div>
+          </div>
+          <div class="message__body">
+            <a class="message__username" href="javascript:void(0)">Грейс Келли</a>
+            <ul class="message__list">
+              <li class="message__item">
+                <p class="message__text">Давай завтра поедем на шашлыки к кириллу</p>
+                <time class="message__time">21:05</time>
+              </li>
+              <li class="message__item">
+                <p class="message__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <time class="message__time">21:10</time>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="dialog__send-message">
+      <div class="level-wrap">
+        <div class="avatar red">
+          <img src="img/user.jpg" alt="">
+        </div>
+         <div class="level level_small">
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+        </div>
+      </div>
+      <form class="dialog__form">
+        <textarea class="dialog__input" type="text" placeholder="Напиши что-нибудь..."></textarea>
+        <div class="emoji-container">
+          <span class="more-emoji"></span>
+          <div class="emoji-wrapper">
+            <img class="emoji__item" src="img/emoji1.png" alt="">
+            <img class="emoji__item" src="img/emoji2.png" alt="">
+            <img class="emoji__item" src="img/emoji3.png" alt="">
+            <img class="emoji__item" src="img/emoji4.png" alt="">
+            <img class="emoji__item" src="img/emoji5.png" alt="">
+            <img class="emoji__item" src="img/emoji6.png" alt="">
+            <img class="emoji__item" src="img/emoji7.png" alt="">
+            <img class="emoji__item" src="img/emoji8.png" alt="">
+            <img class="emoji__item" src="img/emoji1.png" alt="">
+            <img class="emoji__item" src="img/emoji2.png" alt="">
+            <img class="emoji__item" src="img/emoji3.png" alt="">
+            <img class="emoji__item" src="img/emoji4.png" alt="">
+            <img class="emoji__item" src="img/emoji5.png" alt="">
+            <img class="emoji__item" src="img/emoji6.png" alt="">
+            <img class="emoji__item" src="img/emoji7.png" alt="">
+            <img class="emoji__item" src="img/emoji8.png" alt="">
+            <img class="emoji__item" src="img/emoji1.png" alt="">
+            <img class="emoji__item" src="img/emoji2.png" alt="">
+            <img class="emoji__item" src="img/emoji3.png" alt="">
+            <img class="emoji__item" src="img/emoji4.png" alt="">
+            <img class="emoji__item" src="img/emoji5.png" alt="">
+            <img class="emoji__item" src="img/emoji6.png" alt="">
+            <img class="emoji__item" src="img/emoji7.png" alt="">
+            <img class="emoji__item" src="img/emoji8.png" alt="">
+            <img class="emoji__item" src="img/emoji1.png" alt="">
+            <img class="emoji__item" src="img/emoji2.png" alt="">
+            <img class="emoji__item" src="img/emoji3.png" alt="">
+            <img class="emoji__item" src="img/emoji4.png" alt="">
+            <img class="emoji__item" src="img/emoji5.png" alt="">
+            <img class="emoji__item" src="img/emoji6.png" alt="">
+            <img class="emoji__item" src="img/emoji7.png" alt="">
+            <img class="emoji__item" src="img/emoji8.png" alt="">
+            <img class="emoji__item" src="img/emoji1.png" alt="">
+            <img class="emoji__item" src="img/emoji2.png" alt="">
+            <img class="emoji__item" src="img/emoji3.png" alt="">
+            <img class="emoji__item" src="img/emoji4.png" alt="">
+            <img class="emoji__item" src="img/emoji5.png" alt="">
+            <img class="emoji__item" src="img/emoji6.png" alt="">
+            <img class="emoji__item" src="img/emoji7.png" alt="">
+            <img class="emoji__item" src="img/emoji8.png" alt="">
+          </div>
+        </div>
+        <div class="emoji">
+          <img class="emoji__item" src="img/emoji1.png" alt="">
+          <img class="emoji__item" src="img/emoji2.png" alt="">
+          <img class="emoji__item" src="img/emoji3.png" alt="">
+          <img class="emoji__item" src="img/emoji4.png" alt="">
+          <img class="emoji__item" src="img/emoji5.png" alt="">
+          <img class="emoji__item" src="img/emoji6.png" alt="">
+          <img class="emoji__item" src="img/emoji7.png" alt="">
+          <img class="emoji__item" src="img/emoji8.png" alt="">
+        </div>
+        <button class="dialog__affix" type="button"></button>
+        <button class="dialog__send" type="button">Отправить</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js?v=3"></script>
+<script type="text/javascript">
+$('.dialog__body').scrollTop($('.dialog__body').height() + 240);
+</script>
+
+</body>
+</html>

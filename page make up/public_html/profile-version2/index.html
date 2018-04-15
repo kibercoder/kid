@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css?v=8">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="wrapper">
+    <div class="header__logo">
+      <a class="header__logo-link" href="javascript:void(0)"></a>
+    </div>
+    <div class="header__panel">
+      <a class="header__name" href="javascript:void(0)">Медвежонок</a>
+      <p class="header__status">Сегодня я ем мед...</p>
+      <input class="header__status-input" type="text" placeholder="Введи статус...">
+      <button class="header__logout" type="button">Выйти</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper wrapper_main">
+  
+  <nav class="nav">
+    <ul>
+      <li class="nav__item"><a href="javascript:void(0)">Мой дом</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Новости</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Диалоги <span id="dialogs">12</span></a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Моя работа</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Финансы</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Друзья <span id="friends">4</span></a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Сейф</a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Миссия <span id="missions">1</span></a></li>
+      <li class="nav__item"><a href="javascript:void(0)">Билеты <span id="tickets">2</span></a></li>
+    </ul>
+    <ul>
+      <li class="nav__item_last"><a href="javascript:void(0)">Настройки аккаунта</a></li>
+      <li class="nav__item_last"><a href="javascript:void(0)">На главную</a></li>
+    </ul>
+  </nav>
+
+  <div class="panel">
+    
+    <div class="user">
+      <span class="user__online active">Online</span>
+      <div class="level-wrap">
+        <div class="avatar red">
+          <img src="img/user.jpg" alt="">
+        </div>
+        <div class="level">
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+          <span class="level__star"></span>
+        </div>
+      </div>
+      <button class="user__edit" type="button">Редактировать</button>
+      <div class="user__gifts">
+        <img src="img/loc4.png" alt="">
+      </div>
+      <button class="user__gift-button"></button>
+    </div>
+
+    <div class="aim">
+      <div class="aim__row">
+        <a class="aim__left aim__link" href="javascript:void(0)">Цель:</a>
+        <p class="aim__right">Велосипед BMW</p>
+      </div>
+      <div class="aim__row">
+        <p class="aim__left">До цели:</p>
+        <p class="aim__right">5000 кидкоинов</p>
+      </div>
+      <div class="aim__row">
+        <p class="aim__left">Финиш:</p>
+        <p class="aim__right">25.12.2018</p>
+      </div>
+      <button class="aim__choose">Выбери цель</button>
+    </div>
+
+    <div class="friends">
+    	<a class="friends__title"  href="javascript:void(0)">Друзья онлайн <span>3</span></a>
+      <a class="friends__item" href="javascript:void(0)">
+        <div class="level-wrap">
+          <div class="avatar red">
+            <img src="img/user.jpg" alt="">
+          </div>
+          <div class="level level_small">
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+          </div>
+        </div>
+        <p class="friends__name">Медвежонок</p>
+      </a>
+      <a class="friends__item" href="javascript:void(0)">
+        <div class="level-wrap">
+          <div class="avatar blue">
+            <img src="img/user.jpg" alt="">
+          </div>
+          <div class="level level_small">
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+          </div>
+        </div>
+        <p class="friends__name">Медвежонок</p>
+      </a>
+      <a class="friends__item" href="javascript:void(0)">
+        <div class="level-wrap">
+          <div class="avatar green">
+            <img src="img/user.jpg" alt="">
+          </div>
+          <div class="level level_small">
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+          </div>
+        </div>
+        <p class="friends__name">Медвежонок</p>
+      </a>
+    </div>
+
+    <div class="location">
+      <p class="location__title">Локации <span>15</span></p>
+      <ul class="location__list">
+        <li class="location__item"><a href="javascript:void(0)">Киностудия</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Госдума</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Редакция газеты</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Домик стилиста</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Полиция</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Больница</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Студия дизайна</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Стройка</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Бизнес-центр</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Радиостанция</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Академия</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Банк</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Магазин</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Киоск</a></li>
+        <li class="location__item"><a href="javascript:void(0)">Фонтан</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="wall">
+    
+    <div class="wall__info">
+      <p class="wall__name">Никита Соколовский</p>
+      <p class="wall__about">Житель Квидворка с 1 января 2018 года</p>
+      <p class="wall__age">Возраст: <span>12 лет</span></p>
+      <p class="wall__profession">Лучшая профессия: <span>Повар</span></p>
+      <p class="wall__achieve">Достижения: <span>3 место в турнире "Спорт"</span></p>
+      <button class="more-achieve" type="button"></button>
+      <div class="wall__achieve_more">
+        <p class="wall__achieve"><span>3 место в турнире "Спорт"</span></p>
+        <p class="wall__achieve"><span>3 место в турнире "Спорт"</span></p>
+      </div>
+    </div>
+
+    <form class="wall__form">
+    	<input class="wall__input" type="text" placeholder="Новая запись">
+    	<button class="wall__affix" type="button"></button>
+    </form>
+
+    <div class="post">
+    	<header class="post__header">
+        <div class="level-wrap">
+          <div class="avatar red">
+            <img src="img/user.jpg" alt="">
+          </div>
+          <div class="level level_small">
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+          </div>
+        </div>
+	        <div class="post__info">
+	        	<a class="post__name" href="javascript:void(0)">Медвежонок</a>
+	        	<time class="post__time">15 янв в 21:45</time>
+	        </div>
+    	</header>
+    	<div class="post__content">
+    		<img src="img/post1.jpg" alt="">
+    	</div>
+    	<footer class="post__footer">
+    		<button class="like" type="button">18</button>
+    		<button class="comment" type="button">10</button>
+    		<button class="repost" type="button">18</button>
+    	</footer>
+
+      <div class="post__comments-wrap">
+
+        <div class="post__comment">
+          <header class="comment__header">
+            <div class="level-wrap">
+              <div class="avatar red">
+                <img src="img/user.jpg" alt="">
+              </div>
+              <div class="level level_comment">
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+                <span class="level__star"></span>
+              </div>
+            </div>
+            <div class="comment__info">
+              <a class="comment__name" href="javascript:void(0)">Катя Иванова</a>
+              <time class="comment__time">15 янв в 21:45</time>
+            </div>
+          </header>
+          <p class="comment__text">Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+          <footer class="comment__footer">
+            <button class="like" type="button">18</button>
+            <button class="repost" type="button">Ответить</button>
+          </footer>
+        </div>
+
+        <button class="comment__more" type="button">Все комментарии</button>
+        <div class="comment__more-wrap">
+
+          <div class="post__comment">
+            <header class="comment__header">
+              <div class="level-wrap">
+                <div class="avatar red">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="level level_comment">
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                  <span class="level__star"></span>
+                </div>
+              </div>
+              <div class="comment__info">
+                <a class="comment__name" href="javascript:void(0)">Катя Иванова</a>
+                <time class="comment__time">15 янв в 21:45</time>
+              </div>
+            </header>
+            <p class="comment-text">Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+            <footer class="comment__footer">
+              <button class="like" type="button">18</button>
+              <button class="repost" type="button">Ответить</button>
+            </footer>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="post">
+    	<header class="post__header">
+        <div class="level-wrap">
+          <div class="avatar red">
+            <img src="img/user.jpg" alt="">
+          </div>
+          <div class="level level_small">
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+            <span class="level__star"></span>
+          </div>
+        </div>
+	        <div class="post__info">
+	        	<a class="post__name" href="javascript:void(0)">Медвежонок</a>
+	        	<time class="post__time">15 янв в 21:45</time>
+	        </div>
+    	</header>
+    	<div class="post__content">
+    		<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+    		<p>В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+    	</div>
+    	<footer class="post__footer">
+    		<button class="like" type="button">18</button>
+    		<button class="comment" type="button">10</button>
+    		<button class="repost" type="button">18</button>
+    	</footer>
+    </div>
+
+  </div>
+
+</div>
+
+<section class="modal modal_repost">
+  <div class="modal__wrap">
+    <p class="modal__title">Добавь свой комментарий:</p>
+    <form class="wall__form">
+      <textarea class="wall__input" type="text" placeholder="Новая запись"></textarea>
+      <button class="wall__affix" type="button"></button>
+    </form>
+    <button class="modal__repost" type="button">Ответить</button>
+  </div>
+</section>
+
+<a class="up-button" href="#header"></a>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js?v=8"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+/*Professions*/
+
+.professions {
+  width: 77%;
+  background-color: #fff;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7vh;
+}
+
+.professions__title {
+  font-weight: bold;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
+
+.professions__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.professions__row:nth-of-type(odd) {
+  background-color: #efefef;
+}
+
+.professions__row:first-of-type {
+  background-color: #017101;
+  color: #fff;
+  font-size: 14px;
+}
+
+.professions__table td {
+  padding: 8px 5px;
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.professions__row:first-of-type td {
+  border: 1px solid #427142;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+
+.professions__table td {
+  width: 18%;
+}
+
+.professions__table td:first-of-type {
+  width: 28%;
+}
+
+.professions__row:not(:first-of-type) td:not(:first-of-type) {
+  padding-left: 20px;
+}
+
+.professions__row:not(:first-of-type) td:first-of-type {
+  font-size: 18px;
+}
+
+.professions__new {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #19e7cf;
+  margin-left: 15px;
+}

@@ -1,0 +1,339 @@
+/*Payment*/
+
+.payment {
+  background: url(../img/payment-bg.jpg) no-repeat center 3% / cover;
+  min-height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.header_payment .header__logo-link {
+  background: url(../img/logo-payment.png) no-repeat center / contain;
+}
+
+.payment .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.payment__about {
+  width: 32%;
+}
+
+.payment__about .payment__title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment__kidwork {
+  padding: 20px 30px;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.payment__kidwork .payment__text:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.payment__container {
+  width: 57%;
+  background-color: #fff;
+}
+
+.payment__container .payment__title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #5e5e5e;
+  text-transform: uppercase;
+  padding: 12px 10px 12px 25px;
+}
+
+.payment__subtitle {
+  font-weight: bold;
+  font-size: 19px;
+  padding: 10px 10px 10px 25px;
+  border-bottom: 1px solid #c7c7c7;
+  border-top: 1px solid #c7c7c7;
+  width: 100%;
+}
+
+.payment__subtitle span {
+  margin-right: 20px;
+  position: relative;
+}
+
+.payment__subtitle span::after {
+  content: '';
+  width: 2px;
+  height: 28px;
+  background-color: #202020;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+
+.payment__row {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.payment__row .payment__text {
+  font-weight: bold;
+  font-size: 18px;
+  width: 28%;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.payment__input {
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid #c7c7c7;
+  padding: 5px 10px 7px 10px;
+  letter-spacing: .03em;
+}
+
+.payment__input::-webkit-input-placeholder { color: #c7c7c7; }
+.payment__input::-moz-placeholder { color: #c7c7c7; }
+
+.payment__row:first-of-type .payment__input {
+  width: 28%;
+  margin-right: 20px;
+}
+
+.payment__step_data {
+  padding-bottom: 25px;
+}
+
+.payment__row::after {
+  font-weight: bold;
+  font-size: 17px;
+  color: #c7c7c7;
+  position: absolute;
+  left: calc(28% + 20px);
+  bottom: -5px;
+  letter-spacing: .05em;
+}
+
+.payment__row:first-of-type::after {
+  content: 'Для корректного оформления';
+}
+
+.payment__row:last-of-type::after {
+  content: 'Для отправки квитанции';
+}
+
+.payment__step_way {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.payment__block {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.payment__way {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.payment__block:nth-of-type(1) {
+  width: 28%;
+}
+
+.payment__block:nth-of-type(2) {
+  width: 25%;
+}
+
+.payment__block:nth-of-type(3) {
+  width: 34%;
+}
+
+.payment__block:nth-of-type(1) .payment__way {
+  background: url(../img/payment1.png) no-repeat right center / contain;
+}
+
+.payment__block:nth-of-type(2) .payment__way {
+  background: url(../img/payment2.png) no-repeat right center / contain;
+}
+
+.payment__block:nth-of-type(3) .payment__way {
+  background: url(../img/payment3.png) no-repeat right center / contain;
+}
+
+.payment__button {
+  font-size: 17px;
+  text-transform: uppercase;
+  background-color: #ffef3b;
+  padding: 9px 35px 9px 35px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.3);
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.payment__privacy {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 85%;
+  font-size: 14px;
+}
+
+.payment__privacy a {
+  text-decoration: underline;
+}
+
+.payment__block input:not(checked) + .payment__way::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -19px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.payment__block input:not(checked) + .payment__way::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  background-color: #6cdf01;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.payment__block input:checked + .payment__way::after {
+  opacity: 1;
+}
+
+.payment__block input:not(checked) + .payment__way {
+  position: relative;
+}
+
+.payment__success,
+.payment__error,
+.payment__card {
+  /*display: flex;*/
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.payment__notification {
+  padding: 30px 5%;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 20px;
+  width: fit-content;
+  min-width: 32%;
+  max-width: 85%;
+}
+
+.payment__notification .payment__text {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.payment__notification .payment__text:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.payment__info {
+  font-weight: bold;
+  font-size: 23px;
+  color: #fff;
+  letter-spacing: .04em;
+  width: 100%;
+  padding-left: 35%;
+  margin-bottom: 15px;
+}
+
+.payment__info:first-of-type {
+  text-transform: uppercase;
+}
+
+.payment__form {
+  background: url(../img/payment-form.png) no-repeat center / cover;
+  padding: 32px 50px;
+  width: 770px;
+  height: 390px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.payment__form .payment__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.payment__caption {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.payment__form .payment__input {
+  width: 72%;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.payment__form .payment__button {
+  position: absolute;
+  left: 28%;
+  bottom: 0;
+}
+
+.payment__cvv {
+  position: absolute;
+  width: 18%;
+  bottom: 42px;
+  right: 20px;
+}
+
+.payment__cvv span {
+  font-size: 17px;
+}
+
+.payment__form .payment__input_date {
+  width: 17%;
+  text-align: center;
+}
+
+.payment__input_cvv {
+  text-align: center;
+}

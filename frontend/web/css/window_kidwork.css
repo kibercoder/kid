@@ -1,0 +1,106 @@
+#wraper_window {
+     background: url("../../img/black_background.png") repeat scroll 0 0 transparent;
+     position: absolute; 
+     display: none; 
+     filter:alpha(opacity=50); 
+     ..-opacity:0.5; 
+     opacity:0.5;
+     -khtml-opacity:0.5; 
+     z-index: 100; 
+     top: 0;
+     min-width: 1170px;
+     width: 100%;
+     width:expression(this.scrollWidth < 1170? "1170px" : "100%");
+}
+
+#wraper_window2 {
+    /*position: fixed;*/
+    position: absolute;
+    float: left; 
+    width: 100%; 
+    top: 15%; 
+    z-index: 1000;
+    min-width: 1170px;
+    width: 100%;
+    width:expression(this.scrollWidth < 1170? "1170px" : "100%");
+}
+
+#src_galery {
+    background: url("../../img/galery_fon.png") repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #FFEC00; 
+    display: inline-block; 
+    margin: 0 auto; 
+    width: 45%; 
+    padding: 8px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#src_galery i {
+    cursor: pointer;
+    font-family: trebuchet MS;
+    font-style: normal;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FF0018;
+    display: block;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 17px;
+    opacity: 1.0 !important;
+}
+
+#src_galery .list_avatars {
+    width: 100%;
+}
+
+#src_galery .list_avatars th {
+    text-align: center;
+    font-size: 35px;
+    font-family: akrobat-regular;
+}
+
+#src_galery .list_avatars td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#src_galery .list_avatars td:hover {
+    
+}
+
+#src_galery .list_avatars td img {
+    width: 80px;
+    cursor: pointer;
+}
+
+#src_galery .list_avatars td img:hover {
+    border: 1px solid #FF0000;
+    width: 70px;
+}
+
+.list_avatars {
+    display: none;
+}
+
+#src_galery .list_avatars tfoot td {
+    padding: 20px 0 0;
+}
+
+#src_galery .list_avatars tfoot td label {
+    font-family: akrobat-regular;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+input[type="file"]#user-avatar{
+    display: none;
+}
+

@@ -1,0 +1,155 @@
+/*Dialog-list*/
+
+.wrapper_dialog-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dialog-list {
+  position: relative;
+  width: 77%;
+  height: calc(100vh - 95px);
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 7px 0 rgba(0,0,0,.18);
+     -moz-box-shadow: 0 5px 7px 0 rgba(0,0,0,.18);
+          box-shadow: 0 5px 7px 0 rgba(0,0,0,.18);
+}
+
+.dialog-list__search {
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dialog-list__input {
+  padding: 20px 15% 20px 15%;
+  font-size: 17px;
+  letter-spacing: .05em;
+  width: 100%;
+  color: #505050;
+}
+
+.dialog-list__input::-webkit-input-placeholder { color: #dbdada; }
+.dialog-list__input::-moz-placeholder { color: #dbdada; }
+
+.dialog-list__search-btn {
+  position: absolute;
+  left: 8%;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background: url(../img/search.png) no-repeat center / 34px;
+  cursor: pointer;
+}
+
+.dialog-list__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 15px;
+  min-height: 90px;
+  cursor: pointer;
+}
+
+.dialog-list__item:hover {
+  background-color: #f5f9fb;
+}
+
+.gialog-list__info {
+  width: 100%;
+}
+
+.users-message {
+  display: flex;
+  align-items: center;
+  margin-top: -8px;
+}
+
+.gialog-list__info.users-last .avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.gialog-list__info.users-last .level_comment {
+  position: relative;
+  width: initial;
+  height: inherit;
+}
+
+.dialog-list__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-width: 70%;
+  max-height: 23px;
+  font-size: 16px;
+}
+
+.users-message .dialog-list__description {
+  width: 61%;
+}
+
+.dialog-list__name {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.dialog-list__time {
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #817f7f;
+  position: absolute;
+  right: 15%;
+  top: 0;
+}
+
+.dialog-list .avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 18px;
+}
+
+.dialog-list .avatar::after {
+  top: -11px;
+  left: -12px;
+  width: 88%;
+  height: 88%;
+  border-width: 15px;
+}
+
+.dialog-list__item.online .level-wrap::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #01e7d4;
+  border: 3px solid #00f6fe;
+  position: absolute;
+  left: -10px;
+  top: -2px;
+}
+
+.users-last .level-wrap::before {
+  display: none;
+}
+
+.dialog-list__delete {
+  width: 30px;
+  height: 30px;
+  background: url(../img/close.png) no-repeat center / 22px;
+  position: absolute;
+  top: 14px;
+  right: 10%;
+  cursor: pointer;
+  display: none;
+}
+
+.dialog-list__item:hover .dialog-list__delete {
+  display: block;
+}

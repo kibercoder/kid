@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+
+    <meta http-equiv="Content-Language" content="ru" />
+
+    <title>Kidwordk - турнир!</title>
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <meta name="description" content="" />
+
+    <meta name="keywords" content="" />
+
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            if(screen.width < 600){
+                $("head").append('<link rel="stylesheet" type="text/css" href="/css/touches.css" />'); 
+            }
+        }
+    </script>
+
+    <link rel="stylesheet/less" type="text/less" href="./css/style.less" />
+
+    <link rel="stylesheet/less" type="text/less" href="./css/tournament.less" />
+
+    <link rel="stylesheet" type="text/css" href="./css/window_tournament.css" />
+
+    <link rel="stylesheet" href="./css/jquery.custom-scroll.css" />
+
+</head>
+
+<body id="tournament">
+
+    
+<section id="wrapper">
+    
+    <header id="header">
+
+    </header>
+
+    <section id="my_conteiner">
+        
+        <div id="tabs">
+            <div id="blue">
+                <span>6-8</span> лет
+            </div>
+            <div id="green">
+                <span>9-12</span> лет
+            </div>
+            <div id="yellow">
+                <span>13-15</span> лет
+            </div>
+            <a id="button_main" href="#"></a>
+        </div>
+
+
+        <table id="table_conteiner" cellpadding="0" cellspacing="0">
+            
+            <thead>
+                <tr>
+                    <th>НАЧАЛО</th>
+                    <th>ТИП</th>
+                    <th>СТОИМОСТЬ</th>
+                    <th>НАЗВАНИЕ</th>
+                    <th>ПРИЗОВОЙ ФОНД</th>
+                    <th>РЕГИСТРАЦИЯ</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        12 ДЕКАБРЯ 12:45
+                    </td>
+                    <td class="team_tournament">
+                        командный
+                    </td>
+                    <td>
+                        2 КИДКОИНА
+                    </td>
+                    <td class="name_tournament">
+                        МЕДИЦИНА
+                    </td>
+                    <td>
+                        200 КИДКОИНОВ
+                    </td>
+                    <td class="reg">
+                        <a href="#"></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        10 января 09:30
+                    </td>
+                    <td class="individual_tournament">
+                        ИНДИВИДУАЛЬНЫЙ
+                    </td>
+                    <td>
+                        БЕСПЛАТНЫЙ
+                    </td>
+                    <td class="name_tournament">
+                        МУЛЬТИКИ
+                    </td>
+                    <td>
+                        5 БИЛЕТОВ
+                    </td>
+                    <td class="reg">
+                        <a href="#"></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        12 января 12:10
+                    </td>
+                    <td class="team_tournament">
+                        командный
+                    </td>
+                    <td>
+                        1 КИДКОИН
+                    </td>
+                    <td class="name_tournament">
+                        ЗАГАДКИ
+                    </td>
+                    <td>
+                        100 КИДКОИНОВ
+                    </td>
+                    <td class="reg">
+                        <a href="#"></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+
+</section>
+
+
+<div id="wraper_window"></div>
+<div id="wraper_window2">
+    <div id="src_galery">
+
+        <div id="shield">
+
+            <div id="pic_shield">
+                <img src="../img/tournament/shield.png" width="300" />
+            </div>
+
+            <div id="context">
+                <p>Начало: 10 декабря в 12:45</p>
+                <p>Стоимость: 2 кидкоина</p>
+                <p>Максимальное колличество участников: 100</p>
+            </div>
+        </div>
+
+        <div id="wrap_table_info">
+            <h3>Вы отменили регистрацию</h3>
+
+            <div id="repeal_signup">
+                <button></button>
+            </div>
+
+            <table cellspacing="0">
+                <colgroup>
+                    <col span="1" width="34%" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" id="cell_info">
+
+                            <p>Общий призовой фонд 100 кидкоинов</p>
+                            <br />
+                            <p>Призовых мест: 5</p>
+                            <br />
+                            <ul>
+                                <li>1-50 кидкоинов</li>
+                                <li>2-20 кидкоинов</li>
+                                <li>3-15 кидкоинов</li>
+                                <li>4-10 кидкоинов</li>
+                                <li>5-5 кидкоинов</li>
+                            </ul>
+
+                        </td>
+                        <td class="amount_players" style="border-left:  2px solid #a4865f;"></td>
+                        <td class="amount_players">
+                            Игроки: 10
+                        </td>
+                        <td class="amount_players"></td>
+                    </tr>
+                    <tr>
+                        <td class="info_players">
+
+                            <p>Красные: 10</p>
+
+                            <div class="box custom-scroll-advanced_container">
+                                <div class="custom-scroll-advanced_inner">
+
+                                <ul>
+                                    <li>
+                                        Медвежонок
+                                    </li>
+                                    <li>
+                                        Утёнок
+                                    </li>
+                                    <li>
+                                        Лисёнок
+                                    </li>
+
+                                    <li class="empty"></li>
+
+                                    <li class="empty"></li>
+
+                                    <li class="empty"></li>
+
+                                    <li class="empty"></li>
+
+                                    <li class="empty"></li>
+
+                                    <li class="empty"></li>
+
+                                    <li class="empty"></li>
+
+                                    <li class="empty"></li>
+
+                                </ul>
+
+                                </div>
+                                <div class="custom-scroll-advanced_track-y">
+                                    <span class="arrow top"></span>
+                                    <span class="arrow bottom"></span>
+                                </div>
+                                <div class="custom-scroll-advanced_bar-y"></div>
+                            </div>
+
+                        </td>
+                        <td class="info_players">
+                            <p>Зелёные: 15</p>
+                
+                            <div class="box2 custom-scroll-advanced_container">
+                            <div class="custom-scroll-advanced_inner">
+
+                            <ul>
+                                <li>
+                                    Пупсик
+                                </li>
+                                <li>
+                                    Картошка
+                                </li>
+                                <li>
+                                    Жора
+                                </li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                            </ul>
+
+                            </div>
+                                <div class="custom-scroll-advanced_track-y">
+                                    <span class="arrow top"></span>
+                                    <span class="arrow bottom"></span>
+                                </div>
+                                <div class="custom-scroll-advanced_bar-y"></div>
+                            </div>
+
+                        </td>
+                        <td class="info_players">
+                            <p>Синие: 30</p>
+
+                            <div class="box3 custom-scroll-advanced_container">
+                            <div class="custom-scroll-advanced_inner">
+
+                            <ul>
+                                <li>
+                                    Гаврик
+                                </li>
+                                <li>
+                                    Гоша
+                                </li>
+                                <li>
+                                    Краб
+                                </li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                                <li class="empty"></li>
+
+                            </ul>
+
+                            </div>
+                                <div class="custom-scroll-advanced_track-y">
+                                    <span class="arrow top"></span>
+                                    <span class="arrow bottom"></span>
+                                </div>
+                                <div class="custom-scroll-advanced_bar-y"></div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <img class="close" src="../img/tournament/close_button.png" />
+    </div>
+
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+
+
+
+
+
+});
+</script>
+
+    <script src="./js/jquery.custom-scroll.min.js"></script>
+
+    <script type="text/javascript" src="./js/window_tournament.js"></script>
+
+    <script src="./js/js_v2.7.2_less.min.js"></script>
+</body>
+
+</html>

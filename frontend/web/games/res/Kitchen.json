@@ -1,0 +1,17 @@
+{
+  "src": "./kitchen",
+  "res": {
+    "background_0_png": "background_0.png",
+    "background_1_png": "background_1.png",
+    "background_2_png": "background_2.png",
+    "background_3_png": "background_3.png",
+    "background_table_png": "background_table.png",
+    "background_arrow_png": "background_arrow.png",
+    "table_0_png": "table_0.png",
+    "table_1_png": "table_1.png",
+    "table_2_png": "table_2.png",
+    "table_3_png": "table_3.png",
+    "table_4_png": "table_4.png",
+    "table_5_png": "table_5.png"
+  }
+}

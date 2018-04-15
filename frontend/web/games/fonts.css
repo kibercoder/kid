@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Myriad-Pro-Light-Condensed';
+    src: url('./res/fonts/MyriadPro-LightCond.eot');
+    src: url('./res/fonts/MyriadPro-LightCond.eot?#iefix') format('embedded-opentype'),
+    url('./res/fonts/MyriadPro-LightCond.woff') format('woff'),
+    url('./res/fonts/MyriadPro-LightCond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdonisC-Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: url(./res/fonts/AdonisC.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'AdonisC-Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url(./res/fonts/AdonisC-Bold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'AdonisC-Italic';
+    font-style: italic;
+    font-weight: normal;
+    src: url(./res/fonts/AdonisC-Italic.ttf) format('ttf');
+}

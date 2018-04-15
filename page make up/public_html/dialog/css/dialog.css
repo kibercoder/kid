@@ -1,0 +1,234 @@
+/*Dialog*/
+
+.header_dialog .header__panel {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+.header__friend {
+  font-size: 18px;
+  margin-top: -2px;
+  margin-right: 45px;
+  color: #fff;
+}
+
+.header__friend:hover {
+  color: #fff;
+}
+
+.header__last-visit {
+  font-size: 13px;
+}
+
+.header__back {
+	width: 30px;
+	height: 30px;
+	background: url(../img/back-arrow.png) no-repeat left center / 18px;
+	margin-right: 10px;
+}
+
+.dialog {
+  position: relative;
+  width: 76%;
+  height: calc(100vh - 95px);
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 7px 0 rgba(0,0,0,.18);
+     -moz-box-shadow: 0 5px 7px 0 rgba(0,0,0,.18);
+          box-shadow: 0 5px 7px 0 rgba(0,0,0,.18);
+}
+
+.dialog__body {
+  overflow: auto;
+  height: calc(100vh - 225px);
+  padding-left: 20px;
+}
+
+.dialog__body::-webkit-scrollbar {
+  width: 7px;
+  -webkit-appearance: none;
+}
+.dialog__body::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .35);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.dialog__date {
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #817f7f;
+}
+
+.dialog .avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 18px;
+}
+
+.dialog .avatar::after {
+  top: -11px;
+  left: -12px;
+  width: 88%;
+  height: 88%;
+  border-width: 15px;
+}
+
+.message {
+  display: flex;
+  margin-top: 30px;
+  padding-right: 8%;
+}
+
+.message__body {
+  width: 100%;
+}
+
+.message__username {
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.message__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.message__text {
+  font-size: 15px;
+  width: fit-content;
+  max-width: 75%;
+  padding: 1px 5px 3px 5px;
+}
+
+.message_user .message__text {
+  background-color: #ffdeff;
+}
+
+.message__time {
+  font-size: 14px;
+  color: #817f7f;
+}
+
+.message__image {
+  max-width: 100%;
+}
+
+.message_user .message__image {
+  padding: 10px 5px;
+  background-color: #ffdeff;
+}
+
+.dialog__send-message {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.dialog__form {
+  position: relative;
+  width: 70%;
+}
+
+.dialog__input {
+  font-size: 15px;
+	width: 100%;
+	padding: 15px 80px 5px 15px;
+	border-bottom: 1px solid #202020;
+	height: 70px;
+	margin-bottom: 35px;
+}
+
+.dialog__send {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ff00fc;
+  background-color: transparent;
+}
+
+.dialog__affix {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: url(../img/dialog-affix.png) no-repeat center / 30px;
+	position: absolute;
+	right: 40px;
+	top: 6px;
+	opacity: .8;
+}
+
+.more-emoji {
+	display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: .5;
+  background: url(../img/emoji2.png) no-repeat center / 19px;
+}
+
+.emoji-container {
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	z-index: 2;
+}
+
+.emoji {
+  position: absolute;
+  right: 120px;
+  bottom: 2px;
+}
+
+.emoji__item {
+  width: 19px;
+  cursor: pointer;
+}
+
+.emoji-wrapper .emoji__item {
+	margin: 2px;
+}
+
+.emoji-wrapper {
+  display: none;
+	opacity: 0;
+	transition: .2s;
+	position: absolute;
+	right: 0;
+	top: -153px;
+	width: 300px;
+	height: fit-content;
+	max-height: 145px;
+	background-color: #fff;
+	padding: 10px 15px;
+	overflow: auto;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	text-align: justify;
+}
+
+.emoji-container:hover::after {
+	content: '';
+	width: 220px;
+	height: 25px;
+	position: absolute;
+	top: -10px;
+	right: 0;
+}

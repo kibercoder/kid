@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+
+	<meta http-equiv="Content-Language" content="ru" />
+
+	<title>Signup</title>
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	<meta name="description" content="" />
+
+	<meta name="keywords" content="" />
+
+	<link rel="stylesheet/less" type="text/less" href="/css/style.less" />
+
+	<link rel="stylesheet/less" type="text/less" href="/css/signup.less" />
+
+	<script src="/js/js_v2.7.2_less.min.js"></script>
+
+	<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript">
+	    window.onload = function() {
+	        if(screen.width < 600){
+	            $("head").append('<link rel="stylesheet" type="text/css" href="/css/touches.css?get=1" />'); 
+	        }
+		}
+	</script>
+
+	<script type="text/javascript" src="/js/all_pages.js"></script>
+
+</head>
+<body id="signup">
+
+	<div id="checktouch" style="font-size: 40px;"></div>
+	
+	<div class="wrap">
+
+	   <div id="header">
+
+		    <div class="row">
+	        
+	            <div id="ribbon" class="col1">
+	                
+					<a href="#" id="logo">
+						<img src="/img/logo1.png">
+					</a>
+
+	            </div>
+	            
+	            <div class="col2">
+	                
+					<img id="balun" src="/img/balun.png" />
+
+					<div class="balun">
+						Добро пожаловать в Кидворк! По правилам нашего города все гости должны пройти регистрацию. 
+						После того, как ты введешь свои данные, мы предоставим тебе дом в Кидворке на два дня 
+						совершенно бесплатно. Ты сможешь прогуляться по нашему городку, поучиться некоторым 
+						профессиям и даже устроиться на работу. А если захочешь стать постоянным жителем Кидворка и 
+						получить доступ ко всем профессиям, работать и зарабатывать кидкоины, обменивать их на 
+						ценные вещи в нашем магазине, то тебе просто нужно будет платить за свой дом 300 рублей в 
+						месяц. И все! Ты будешь полноценным жителем Кидворка и получишь доступ ко всем его 
+						удивительным возможностям.
+					</div>
+
+	            </div>
+
+	       
+	        </div>
+	 
+	    </div>
+
+	    <div class="container">
+
+			<form id="form-signup" action="#" method="post" enctype="multipart/form-data">
+
+				<table id="table_conteiner">
+					<colgroup>
+					    <!-- Для первых 1ой ширина 390 -->
+					    <col span="1" width="395" />
+					    <!-- Для 2-й ячейки ширина 375 -->
+					    <col span="1" width="375" />
+					    <!-- Для третьей 405 -->
+					    <col span="1" width="395" />
+					</colgroup>
+					<tody>
+						<tr>
+							<td>
+								<label class="control-label" for="signupform-first_name">
+									Имя
+								</label>
+							</td>
+
+							<td>
+								<input type="text" id="signupform-first_name" class="form-control" name="SignupForm[first_name]" value="Тимур" autofocus="" aria-required="true" aria-invalid="false">
+							</td>
+							
+							<td>
+								<label for="signupform-avatar" class="form-group">
+									<div class="name_field">
+										Аватар
+									</div>
+
+									<div class="selected_avatar">
+										<img src="/img/avatar.png" />
+									</div>
+
+									<div class="choice">
+										<u>Выбрать</u>
+									</div>
+
+									<input type="file" id="signupform-avatar" name="SignupForm[avatar]" aria-invalid="true" />
+								</label>
+							</td>
+
+						</tr>
+
+						<tr>
+							<td>
+								<label class="control-label" for="signupform-last_name">
+									Фамилия
+								</label>
+							</td>
+
+							<td>
+								<input type="text" id="signupform-last_name" class="form-control" name="SignupForm[last_name]" value="Сафаров" autofocus="" aria-required="true" aria-invalid="false" />
+								<p class="help-block help-block-error"></p>
+							</td>
+
+							<td>
+								<label for="signupform-house" class="form-group">
+									<div class="name_field">
+										Дом
+									</div>
+
+									<div class="selected_avatar large">
+										<img src="/img/house.jpg" />
+									</div>
+
+									<div class="choice">
+										<u>Выбрать</u>
+									</div>
+
+									<input type="file" id="signupform-house" name="SignupForm[house]" aria-invalid="true" />
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label class="control-label" for="signupform-username">
+									Ник
+								</label>
+							</td>
+
+							<td>
+								<input type="text" id="signupform-username" class="form-control" name="SignupForm[username]" value="admin" autofocus="" aria-required="true" aria-invalid="false" />
+								<p class="help-block help-block-error"></p>
+							</td>
+
+							<td>
+								<label for="signupform-confirm" class="checkbox_label">
+									Я подтверждаю достоверность указанных мною данных
+									<input id="signupform-confirm" type="checkbox" checked="checked" />
+									<i></i>
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label class="control-label" for="signupform-birthdate">
+									Дата рождения
+								</label>
+							</td>
+
+							<td>
+								<input type="text" id="signupform-birthdate" class="form-control" name="SignupForm[birthdate]" value="admin" autofocus="" aria-required="true" aria-invalid="false" />
+								<p class="help-block help-block-error"></p>
+							</td>
+							<td>
+								<label for="signupform-confirm2" class="checkbox_label">
+									Я ознакомился и принимаю <a href="#">правила</a> сайта kidwork.ru
+									<input id="signupform-confirm2" type="checkbox" />
+									<i></i>
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label class="control-label" for="signupform-city">
+									Город проживания
+								</label>
+							</td>
+
+							<td colspan="2">
+								<input type="text" id="signupform-city" class="form-control" name="SignupForm[city]" value="Самара" autofocus="" aria-required="true" aria-invalid="false" />
+								<p class="help-block help-block-error"></p>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label class="control-label" for="signupform-phone">
+									Телефон
+								</label>
+							</td>
+
+							<td colspan="2">
+								<input type="text" id="signupform-phone" class="form-control" name="SignupForm[phone]" value="+7 3434545400" autofocus="" aria-required="true" aria-invalid="false" />
+								<p class="help-block help-block-error"></p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<label class="control-label" for="signupform-email">
+									E-mail
+								</label>
+							</td>
+
+							<td colspan="2">
+								<input type="text" id="signupform-email" class="form-control" name="SignupForm[email]" value="email@yandex.ru" autofocus="" aria-required="true" aria-invalid="false" />
+								<p class="help-block help-block-error"></p>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="3">
+								<div class="buttons">
+									<button type="submit" class="btn btn-primary" name="signup-button">
+										Сохранить
+									</button>
+									<a href="./">На главную</a>
+								</div>
+							</td>
+						</tr>
+
+	                </tody>
+                </table>
+
+
+
+            </form>
+
+
+	    </div>
+    
+
+
+	</div>
+
+
+</body>
+</html>

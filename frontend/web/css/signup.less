@@ -1,0 +1,586 @@
+#signup {
+	background: url("../../img/signup.jpg") repeat-y scroll 50% 0 transparent;
+
+	.datepicker {
+		margin-left: 8px;
+		/*margin-top: -12px;
+		left: 0 !important;
+		right: 0 !important;
+		margin: -12px auto 0  auto;
+		display: inline-table !important;*/
+
+		.datepicker-months table tr td, .datepicker-months table tr th,
+		.datepicker-years table tr td, .datepicker-years table tr th {
+			width: 118px !important;
+		}
+
+		.datepicker-days table tr td, .datepicker-days table tr th {
+			width: 50px !important;
+		}
+
+		.datepicker-months table tr th, 
+		.datepicker-years table tr th,
+		.datepicker-days table tr th {
+			font-size: 20px !important;
+		}
+
+		.datepicker-months table thead tr th, 
+		.datepicker-years table thead tr th,
+		.datepicker-days table thead tr th {
+			text-indent: 0;
+		}
+
+
+		.datepicker-months table thead tr th:first-child, 
+		.datepicker-years table thead tr th:first-child,
+		.datepicker-days table thead tr th:first-child {
+			text-indent: 15px;
+			font-size: 25px !important;
+			text-align: left;
+			background-color: #EEE;
+		}
+
+		.datepicker-months table thead tr th:last-child, 
+		.datepicker-years table thead tr th:last-child,
+		.datepicker-days table thead tr th:last-child {
+			font-size: 25px !important;
+			text-align: center;
+			background-color: #EEE;
+		}
+
+		table tr td span.disabled,
+		table tr td span.disabled:hover {
+			color: #FF0000 !important;
+		}
+
+		table tr td.disabled, 
+		table tr td.disabled:hover {
+			color: #FF0000 !important;
+		}
+
+	}
+
+
+	/*Styles for mini logo and stars begin*/
+	.wrap_circle_user {
+	    position: relative;
+	    width: 68px;
+	    height: 70px;
+	    display: none;
+	    margin: auto;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    position: absolute;
+
+	    .mini_circle_user {
+	        position: relative;
+	        width: 100%;
+	        height: 100%;
+	        overflow: hidden;
+	        left: 0;
+	        right: 0;
+	        margin: auto;
+
+	        .blank {
+	            background: url("../../img/blank.png") no-repeat scroll 0 0 #FFFFFF;
+		        width: 100%;
+		        height: 100%;
+	            position: absolute;
+	            top: 0;
+	            left: 0;
+	            z-index: 0;
+	        }
+	        
+	        img {
+	            max-width: 68px;
+	            max-height: 68px;
+	          	min-width: 68px;
+	            min-height: 68px;
+	            position: absolute;
+	            top: 0;
+	            left: 0;
+	            z-index: 1;
+	        }
+
+	    }
+
+	    .blue {
+	        background: url("../../img/signup_circle_avatar_full.png") no-repeat scroll 50% 0 transparent;
+	    }
+
+	    .mini_circle {
+	        width: 82px;
+	        height: 82px;
+	        position: absolute;
+		    top: -5px;
+		    left: -7px;
+	        z-index: 2;
+	        
+	        .mini_star {
+	            width: 22px;
+	            height: 22px;
+	            background: url("../../img/profile/star_mini.png") no-repeat scroll -1px -1px transparent;
+	            position: absolute;
+	        }
+
+	        .mini_star_1 {
+	            left: 20px;
+	            top: -8px;
+	        }
+
+	        .mini_star_2 {
+	            left: 35px;
+	            top: -6px;
+	        }
+
+	        .mini_star_3 {
+	            left: 46px;
+	            top: 4px;
+	        }
+
+	        .mini_star_4 {
+	            left: 51px;
+	            top: 15px;
+	        }
+
+	        .mini_star_5 {
+	            left: 52px;
+	            top: 28px;
+	        }
+
+	        .mini_star_6 {
+	            left: 46px;
+	            top: 41px;
+	        }
+
+	        .mini_star_7 {
+	            left: 36px;
+	            top: 49px;
+	        }
+
+	        .mini_star_8 {
+	            left: 25px;
+	            top: 54px;
+	        }
+
+	        .mini_star_9 {
+	            left: 12px;
+	            top: 52px;
+	        }
+
+	        .mini_star_10 {
+	            left: 1px;
+	            top: 47px;
+	        }
+
+	        .mini_star_11 {
+	            left: -7px;
+	            top: 38px;
+	        }
+
+	        .mini_star_12 {
+	            left: -11px;
+	            top: 27px;
+	        }
+
+	        .mini_star_13 {
+	            left: -9px;
+	            top: 15px;
+	        }
+
+	        .mini_star_14 {
+	            left: -3px;
+	            top: 4px;
+	        }
+
+	        .mini_star_15 {
+	            left: 7px;
+	            top: -5px;
+	        }
+
+	    }
+
+	    .online_mini {
+	        background: url("../../img/profile/min_circle_online.png") no-repeat scroll 0 0 transparent;
+	        width: 18px;
+	        height: 18px;
+	        top: -8px;
+	        left: -10px;
+	        z-index: 3;
+	        position: absolute;
+	    }
+
+	}
+
+	/*Styles for mini logo and stars end*/
+
+
+	.mywrap {
+		margin: 0 auto;
+		width: 1170px;
+
+		#header {
+			width: 100%;
+			height: 330px;
+			/*height: 366px;*/
+
+			.row {
+				height: 100%;
+				width: 100%;
+				
+				.col2 {
+					width: 52%;
+					float: left;
+					position: relative;
+
+					#balun {
+						width: 102%;
+					}
+
+					.balun {
+						position: absolute;
+					    top: 7%;
+					    left: 7%;
+					    width: 89%;
+					    font-family: akrobat-semiBold;
+					    font-size: 17px;
+					    text-indent: 30px;
+					    line-height: 25px;
+					}
+				}
+
+				.col1 {
+					width: 48%;
+					height: 100%;
+					float: left;
+					background: url('../../img/ribbon5.png') no-repeat scroll -8px 125px transparent;
+
+					#logo {
+					    position: relative;
+					    left: 98px;
+					    top: 17px;
+					}
+
+
+
+				}
+
+			}
+
+		}
+
+		.mycontainer {
+			width: 100%; float: left;
+
+			form#form-signup {
+				width: 100%; float: left;
+
+				#table_conteiner {
+					width: 100%;
+					
+					tr:first-child {
+						td {
+		                    padding: 0;
+		                }
+	                }
+
+					tr {
+
+
+						td#captcha_user {
+							.form-group {
+								 img {
+									width: 190px;
+								    position: absolute;
+								    left: 468px;
+								    top: -6px;
+								    border: 1px outset #000;
+								    cursor: pointer;
+								}
+							}
+
+						}
+
+						td#choice_avatar {
+							text-align: right;
+						}
+
+
+						td#choice_avatar .field-signupform-user_avatar {
+							display: none;
+						}
+
+						td#choice_avatar .field-signupform-avatar {
+							display: block;
+						    position: absolute;
+						    top: 73px;
+						    left: 50px;
+							
+							.help-block-error {
+								white-space: normal;
+								text-align: right;
+								white-space: nowrap;
+							}
+
+						}
+
+						td {
+							vertical-align: middle;
+							padding: 35px 0 0;
+							position: relative;
+
+							.control-label {
+								font-size: 42px;
+								font-family: akrobat-regular;
+								color: #FFF;
+							}
+
+							input[type=text], input[type=password],
+							input#signupform-password,
+							input#signupform-verifycode {
+								background: url("../../img/input2.png") no-repeat scroll 0 9px transparent;
+							    width: 375px;
+							    height: 75px;
+							    border: 0 none;
+							    font-size: 42px;
+							    font-family: akrobat-regular;
+							    text-indent: 15px;
+							    text-align: center;
+							    border: 0 none;
+								outline:none;
+								-moz-box-shadow: none;
+								-webkit-box-shadow: none;
+								box-shadow: none;
+							}
+
+							input:focus {
+								border: 0 none;
+								outline:none;
+								-moz-box-shadow: none;
+								-webkit-box-shadow: none;
+								box-shadow: none;
+							}
+
+
+							.form-group {
+								margin: 0 !important;
+								position: relative;
+
+								.help-block-error {
+									position: absolute;
+									margin: 0 !important;
+									text-align: center;
+									color: #FFEA00;
+									text-indent: 15px;
+									left: 0;
+									font-family: akrobat-regular;
+									font-size: 24px;
+									font-weight: bold;
+									text-decoration: underline;
+									white-space: nowrap;
+								}
+
+							}
+
+							.label-group {
+								display: table;
+							    width: 310px;
+							    margin: 0 0 0 65px;
+							    cursor: pointer;
+
+								.help-block-error {
+									text-align: right;
+									top: 80px;
+									width: 100% !important;
+								}
+
+								.name_field {
+									/*width: 95px;*/
+									display: table-cell;
+									font-size: 34px;
+									font-family: akrobat-regular;
+									color: #FFF;
+									font-weight: bold;
+								}
+
+								.large {
+									width: 166px !important;
+
+									img {
+										max-width: 120px !important;
+										left: 38px !important;
+									}
+								}
+
+								.selected_avatar {
+									width: 115px;
+									height: 70px;
+									display: table-cell;
+									position: relative;
+
+									img {
+										position: absolute;
+										right: 0;
+										left: 0;
+										top: 0;
+										bottom: 0;
+										margin: auto;
+									}
+								}
+
+							}
+
+							.choice {
+							    font-size: 34px;
+							    font-family: akrobat-regular;
+							    color: #FFF;
+							    text-align: right;
+							    font-weight: bold;
+						        z-index: 1;
+						        text-decoration: underline;
+						        display: table-cell;
+							}
+
+							input[type=file] {
+								display:none;
+							}
+
+
+							.auth_label {
+								padding: 0 0 0 70px; display: block;
+								font-size: 26px;
+							    font-family: akrobat-regular;
+							    color: #FFF;
+							    position: relative;
+							    
+							    .eauth-list {
+							    	li:first-child {
+							    		margin-left: 0;
+							    	}
+							    }
+							    
+								.eauth-service-id-vkontakte .eauth-service-link:before {
+									    content: '';
+									    position: absolute;
+									    top: 0;
+									    left: 0;
+									    width: 64px;
+									    height: 64px;
+									    margin-left: 0;
+									    background: url("../../img/auth_big.png") 0 0 no-repeat;
+								}
+
+								.eauth-service-link {
+									width: 64px; height: 64px;
+									text-align: left;
+								}
+
+								.eauth-service-link[data-eauth-service=vkontakte]:before {
+									background-position: 0 -274px;
+								}
+
+								.eauth-service-id-odnoklassniki .eauth-service-link:before {
+									background-position: 0 -548px;
+								}
+
+								.eauth-service-link:before, .eauth-service-link:after {
+									    content: '';
+									    position: absolute;
+									    top: 0;
+									    left: 0;
+									    width: 64px;
+									    height: 64px;
+									    margin-left: -16px;
+									    background: url("../../img/auth_big.png") 0 0 no-repeat;
+									    margin-left: 0;
+									}
+
+							}
+
+							label.checkbox_label {
+								padding: 0 0 0 70px; display: block;
+								font-size: 26px;
+							    font-family: akrobat-regular;
+							    color: #FFF;
+							    position: relative;
+							    cursor: pointer;
+
+							    input[type=checkbox] {
+									display: none;
+							    }
+
+							    input[type=checkbox] + i {
+								    	right: 0;
+									    position: absolute;
+									    bottom: 0;
+									    background: url("../../img/checkbox.png") no-repeat scroll 0 0 transparent;
+									    width: 21px;
+									    height: 21px;
+									    display: block;
+								}
+
+								input[type=checkbox]:checked + i {
+									background: url("../../img/checkbox.png") no-repeat scroll 0 -21px transparent;
+								}
+
+								a {
+									color: #FFF; text-decoration: underline;
+								}
+
+								.help-block-error {
+									text-indent: 0;
+								}
+
+							}
+
+							.buttons {
+								display: inline-block;
+								width: 365px;
+								left: 0;
+								right: 0;
+								margin: auto;
+								position: absolute;
+
+								button.btn {
+									background: url("../../img/button3.png") no-repeat scroll 0 5px transparent;
+								    width: 165px;
+								    height: 60px;
+								    font-size: 28px;
+								    font-family: akrobat-regular;
+								    color: #000;
+								    border: 0 none;
+								    outline: none;
+								    overflow: visible;
+								    margin: 0;
+								    padding: 0;
+								    float: left;
+								    white-space: nowrap;
+								}
+
+								a {
+									background: url("../../img/button3.png") no-repeat scroll 0 5px transparent;
+								    width: 165px;
+								    height: 60px;
+								    font-size: 28px;
+								    font-family: akrobat-regular;
+								    color: #000;
+								    text-decoration: none;
+								    outline: none;
+								    display: block;
+								    float: right;
+								    line-height: 61px;
+    								text-align: center;
+    								white-space: nowrap;
+								}
+
+							}
+
+						}
+					}
+				}
+			}
+		}
+
+	}
+}

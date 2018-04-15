@@ -1,0 +1,237 @@
+#wraper_window {
+    background: url("../img/galery_fon.png") repeat scroll 0 0 #FFFFFF;
+    position: absolute; 
+    display: none; 
+    filter:alpha(opacity=50); 
+    ..-opacity:0.5; 
+    opacity:0.5;
+    -khtml-opacity:0.5; 
+    z-index: 100; 
+    top: 0;
+    min-width: 1170px;
+    width: 100%;
+    width:expression(this.scrollWidth < 1170? "1170px" : "100%");
+}
+
+#wraper_window2 {
+    /*position: fixed;*/
+    position: absolute;
+    float: left; 
+    width: 100%; 
+    /*top: 15%; */
+    z-index: 1000;
+    min-width: 1100px;
+    width: 100%;
+    width:expression(this.scrollWidth < 1170? "1100px" : "100%");
+}
+
+#src_galery {
+    background: #FFFFFF;
+    border: 3px solid #FFEC00; 
+    display: none; 
+    margin: 0 auto; 
+    width: 45%;
+    min-width: 1100px;
+    width:expression(this.scrollWidth < 1170? "1100px" : "100%");
+    padding: 8px 0 0 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #a4865f;
+    overflow: hidden;
+}
+
+#src_galery img.close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#src_galery .list_avatars {
+    width: 100%;
+}
+
+#src_galery .list_avatars th {
+    text-align: center;
+    font-size: 35px;
+    font-family: akrobat-regular;
+}
+
+#src_galery .list_avatars td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#src_galery .list_avatars td:hover {
+    
+}
+
+#src_galery .list_avatars td img {
+    width: 80px;
+    cursor: pointer;
+}
+
+#src_galery .list_avatars td img:hover {
+    border: 1px solid #FF0000;
+    width: 70px;
+}
+
+.list_avatars {
+    display: none;
+}
+
+#src_galery .list_avatars tfoot td {
+    padding: 20px 0 0;
+}
+
+#src_galery .list_avatars tfoot td label {
+    font-family: akrobat-regular;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#shield {
+    width: 300px;
+    float: left;
+}
+
+#pic_shield {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+#pic_shield img {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+#wrap_table_info {
+    width: 800px;
+    float: left;
+}
+
+#wrap_table_info h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: akrobat-regular;
+    font-weight: normal;
+}
+
+#repeal_signup {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin: 15px 0 0;
+}
+
+#repeal_signup button {
+    width: 420px;
+    height: 95px;
+    background: url("../img/tournament/repeal_signup2.png") no-repeat scroll 0 0 transparent;
+    color: #000;
+    border-color: transparent;
+    box-shadow: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    overflow: visible;
+    -webkit-appearance: button;
+}
+
+#context {
+    width: 100%;
+    float: left;
+    padding-bottom: 8px;
+}
+
+#context p {
+    font-size: 25px;
+    font-family: akrobat-semiBold;
+    padding: 15px 0 0;
+    text-align: left;
+}
+
+#wrap_table_info table {
+    border-top: 2px solid #a4865f;
+    border-left: 2px solid #a4865f;
+    width: 100%;
+}
+
+#cell_info {
+    vertical-align: top;
+    padding: 10px 0 0 10px;
+}
+
+#cell_info p {
+    text-align: center;
+    font-size: 25px;
+    font-family: akrobat-semiBold;
+}
+
+#cell_info ul {
+    list-style-type: none;
+    padding: 0 0 0 10px;
+}
+
+#cell_info ul li {
+    text-align: left;
+    font-size: 25px;
+    font-family: akrobat-semiBold;
+    padding: 0 0 6px 0;
+}
+
+.amount_players {
+    font-size: 25px;
+    font-family: akrobat-semiBold;
+    padding: 0 0 5px 0;
+    width: 22%;
+}
+
+.info_players {
+    border-left:  2px solid #a4865f;
+    border-top:  2px solid #a4865f;
+    width: 22%;
+}
+
+.info_players p {
+    font-size: 25px;
+    font-family: akrobat-semiBold;
+    padding: 0px 0 16px 10px;
+    text-align: left;
+}
+
+.info_players ul {
+    list-style-type: decimal;
+    /*overflow-y: scroll;*/
+    max-height: 250px;
+    padding: 0 0 0 30px;
+    display: block;
+}
+
+.info_players ul li {
+    font-size: 25px;
+    font-family: akrobat-semiBold;
+    padding: 0 0 8px 0;
+    text-align: left;
+}
+
+.info_players ul li.empty {
+    background: url("../img/tournament/border.png") no-repeat scroll 0 22px transparent;
+}

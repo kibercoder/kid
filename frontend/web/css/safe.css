@@ -1,0 +1,59 @@
+/*Professions*/
+
+.safe {
+  width: 77%;
+  margin-top: 15px;
+  border: 1px solid #e5e5e5;
+}
+
+.safe__title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  letter-spacing: .05em;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.safe__counter {
+  color: #5e5e5e;
+  margin-left: 10px;
+}
+
+.safe__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 30px 10px 30px;
+  background-color: #fff;
+}
+
+.safe__item {
+  width: 19%;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.safe__card {
+  width: 156px;
+  height: 225px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.safe__card img {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.safe__name {
+  font-size: 19px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}

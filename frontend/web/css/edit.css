@@ -1,0 +1,104 @@
+/*Professions*/
+
+.edit {
+  width: 77%;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  border: 1px solid #e5e5e5;
+}
+
+.edit__title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  letter-spacing: .05em;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.edit__form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 15% 50px 8%;
+  background-color: #fff;
+}
+
+.edit__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+.edit__caption {
+  font-size: 19px;
+}
+
+.edit__input {
+  width: 68%;
+  font-size: 18px;
+  padding: 7px 10% 10px 8px;
+  border: 1px solid #959595;
+  margin-left: 20px;
+}
+
+.edit__item .form-group{
+  width: 72%;
+}
+.edit__item .form-group .edit__input{
+  width: 95%;
+}
+
+/*.edit__item_avatar {
+  margin-top: 30px;
+  padding-right: 56%;
+}*/
+
+.edit__item_avatar .edit__caption {
+  margin-right: 17px;
+}
+
+.edit__avatar-btn {
+  background-color: transparent;
+  font-size: 19px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 23px;
+}
+
+.edit__save {
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #fffc66;
+  padding: 10px 30px 13px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
+  margin-left: 53.5%;
+  cursor: pointer;
+}
+
+
+#choice_avatar .form-group{
+  width: 36%;
+  display: flex;
+  align-items: center;
+}
+#choice_avatar .selected_avatar{
+  padding-left: 18px;
+}
+#choice_avatar .field-profileform-avatar input[type=file],
+#choice_avatar .field-profileform-user_avatar,
+.list_avatars {
+  display: none;
+}
+
+#wraper_window2{
+  top: 45%;
+}

@@ -1,0 +1,612 @@
+#tooltip {
+      z-index: 9999;
+      position: absolute;
+      display: none;
+      top:0px;
+      left:0px;
+      /*width: 250px;
+      background-color: #fff;
+      padding: 5px 10px 5px 10px;*/
+      color: #000;
+      border: 1px solid #888;
+      border-radius: 5px; 
+      box-shadow: 0 1px 2px #555;
+      box-sizing: ;
+}
+
+body {
+    background: url("../img/manin_background2.jpg") repeat-x scroll 0 0 transparent; 
+}
+
+#wrapper {
+    width: 1450px; position: relative; margin: auto;
+    
+    #header {
+        height: 430px; width: 1170px; margin: auto;
+        
+        #wrap_top_links {
+            width: 100%; float: left; position: relative; padding-top: 24px;
+            
+            .left_links {
+                left: 0; position: absolute;
+            }
+            
+            .right_links {
+                right: 0; position: absolute;
+            }
+            
+            span {
+            
+                font-family: akrobat-regular;
+                font-size: 24px;
+                a {
+                    font-family: akrobat-regular;
+                    text-shadow: 0.7px 0.7px 0 rgba(255, 255, 255, 0.51);
+                    color: black;
+                    font-size: 24px;
+                    font-weight: 400;
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                    
+                }
+            
+            }
+        }
+
+        #characters {
+            width: 100%; float: left; position: relative; 
+            height: 260px;
+            background: url("../img/sprite.png") no-repeat scroll -243px -1040px transparent;
+            top: 44px;
+        }
+
+        #logo {
+                width: 570px;
+                float: left;
+                position: absolute;
+                height: 181px;
+                background: url("../img/sprite.png") no-repeat scroll 5px 0px transparent;
+                top: 16px;
+                left: 445px;
+                z-index: 1;
+        }
+
+
+        nav#mainmenu {
+            width: 100%; position: relative; float: left; top: 44px; height: 59px; padding: 10px 0; 
+
+            ul {
+
+                width: 100%; position: relative; float: left;
+
+                li:first-child {
+                    padding: 0;
+                }
+                
+                li {
+                    float: left; padding: 0 0 0 27px;
+                    list-style-type: none;
+
+                    a {
+
+                        display: block;
+                        position: relative;
+
+                        i.left_part {
+                            background: url("../img/sprite.png") no-repeat scroll -688px -978px transparent;
+                            width: 26px; 
+                            height: 65px;
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                        }
+
+                        i.center_part {
+                            background: url("../img/center_part_menu_item.png") repeat-x scroll 0px -2px transparent;
+                            display: inline-block;
+                            height: 65px;
+                            float: left;
+                            margin: 0 26px;
+                            /* Text style */
+                            text-shadow: 0.7px 0.7px 0 white;
+                            color: black;
+                            font-family: akrobat-regular;
+                            font-size: 26px;
+                            font-weight: 400;
+                            line-height: 53px;
+                            text-transform: uppercase;
+                            font-style: normal;
+                            min-width: 120px;
+                            text-align: center;
+                        }
+
+                        i.right_part {
+                            background: url("../img/sprite.png") no-repeat scroll -830px -978px transparent; 
+                            display: block;
+                            height: 65px;
+                            width: 26px;
+                            position: absolute;
+                            right: 0;
+                        }
+                        
+                    }
+
+                    a:hover {
+                        i.left_part {
+                            background: url("../img/sprite.png") no-repeat scroll -491px -978px transparent;
+                        }
+
+                        i.center_part {
+                            background: url("../img/center_part_menu_item.png") repeat-x scroll 0px -68px transparent;
+                        }
+
+                        i.right_part {
+                            background: url("../img/sprite.png") no-repeat scroll -634px -978px transparent; 
+                        }
+
+                    }
+
+
+                }
+            }
+
+        }
+
+
+    }
+
+    
+    #map {
+        height: 1080px; background: url("../img/map4.png") no-repeat scroll 8px -5px transparent;
+        position: relative;
+
+        /*
+        #policestation {
+
+            overflow: hidden;
+            position: absolute;
+            z-index: 10;
+            background: url('../img/locations.gif') no-repeat scroll 3px 0;
+            top: -143px;
+            left: 174px;
+
+            canvas {
+                left: 0px !important;
+                top: 0px !important;
+            }
+            
+
+        }
+
+        */
+
+        .fadein {
+                -webkit-transition: bottom 1s ease-out 0.5s;
+                 -moz-transition: bottom 1s ease-out 0.5s;
+                 -o-transition: bottom 1s ease-out 0.5s;
+                 transition: bottom 1s ease-out 0.5s;
+        }
+
+        #hospital, .hospital {
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+            background: url('../img/sprite.png') no-repeat scroll -565px 11px transparent;
+            width: 205px;
+            height: 235px;
+            left: 65px;
+            top: 0;
+            
+            .wrapmap {
+                left: -65px !important;
+                /*display: none;*/
+
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+    
+
+        }
+
+        #construction, .construction {
+            position: absolute;
+            overflow: hidden;
+            z-index: 1;
+            background: url('../img/sprite.png') no-repeat scroll -762px -1px transparent;
+            width: 236px;
+            height: 325px;
+            top: 155px;
+            left: 30px;
+
+            .wrapmap {
+                top: -155px !important;
+                left: -30px !important;
+                /*display: none;*/
+
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            
+            }
+        }
+
+        #filmstudio, .filmstudio {
+            width: 365px;
+            height: 207px;
+            overflow: hidden;
+            top: 399px;
+            position: absolute;
+            left: 88px;
+            z-index: 1;
+            background: url('../img/sprite.png') no-repeat scroll -378px -224px;
+
+            .wrapmap {
+                top: -398px !important;
+                left: -88px !important;
+                
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+        #radiostation, .radiostation {
+            width: 327px;
+            height: 536px;
+            overflow: hidden;
+            top: 284px;
+            position: absolute;
+            left: 15px;
+            z-index: 18;
+            background: url('../img/sprite.png') no-repeat scroll -1111px -255px;
+
+            .wrapmap {
+                top: -284px !important;
+                left: -15px !important;
+
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+        #redaction, .redaction {
+
+            width: 210px;
+            height: 270px;
+            overflow: hidden;
+            top: 478px;
+            position: absolute;
+            left: 407px;
+            z-index: 32;
+            background: url('../img/sprite.png') no-repeat scroll -538px -426px;
+
+            .wrapmap {
+                top: -477px !important;
+                left: -408px !important;
+
+                canvas {
+                    left: 0 !important;
+                    top: 0 !important;
+                }
+            }
+
+        }
+
+        #studio, .studio {
+            width: 195px;
+            height: 256px;
+            overflow: hidden;
+            top: 455px;
+            position: absolute;
+            left: 642px;
+            z-index: 35;
+            background: url('../img/sprite.png') no-repeat scroll -225px -785px;
+
+            .wrapmap {
+                top: -457px !important;
+                left: -638px !important;
+
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+        #stylist, .stylist {
+            width: 180px;
+            height: 240px;
+            overflow: hidden;
+            top: 563px;
+            position: absolute;
+            left: 782px;
+            z-index: 34;
+            background: url('../img/sprite.png') no-repeat scroll -1074px -787px;
+
+            .wrapmap {
+                top: -565px !important;
+                left: -778px !important;
+                
+                canvas {
+                    left: 0 !important;
+                    top: 0 !important;
+                }
+            }
+        }
+
+        #restaurant, .restaurant {
+            width: 236px;
+            height: 250px;
+            overflow: hidden;
+            top: 524px;
+            position: absolute;
+            left: 1003px;
+            z-index: 10;
+            background: url('../img/sprite.png') no-repeat scroll -1265px -788px;
+
+            .wrapmap {
+                top: -526px !important;
+                left: -999px !important;
+
+                canvas {
+                    left: 0 !important;
+                    top: 0 !important;
+                }
+            }
+        }
+
+        #tv-tower, .tv-tower {
+            width: 145px;
+            height: 650px;
+            overflow: hidden;
+            top: 86px;
+            position: absolute;
+            left: 1252px;
+            z-index: 11;
+            background: url('../img/sprite.png') no-repeat scroll -1594px -535px;
+
+            .wrapmap {
+                top: -88px !important;
+                left: -1248px !important;
+
+                canvas {
+                    left: 0 !important;
+                    top: 0 !important;
+                }
+            }
+
+        }
+
+        #academy, .academy {
+            width: 330px;
+            height: 261px;
+            overflow: hidden;
+            top: 338px;
+            position: absolute;
+            left: 798px;
+            z-index: 32;
+            background: url('../img/sprite.png') no-repeat scroll  -734px -322px;
+
+            .wrapmap {
+                top: -340px !important;
+                left: -794px !important;
+                
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+        #businescenter, .businescenter {
+            width: 224px;
+            height: 515px;
+            overflow: hidden;
+            top: 2px;
+            position: absolute;
+            left: 1212px;
+            z-index: 10;
+            background: url('../img/sprite.png') no-repeat scroll -1519px -5px;
+
+            .wrapmap {
+                top: -4px !important;
+                left: -1208px !important;
+
+                canvas {
+                    left: 0 !important;
+                    top: 0 !important;
+                }
+            }
+        }
+
+        #bank, .bank {
+            width: 220px;
+            height: 266px;
+            overflow: hidden;
+            top: 174px;
+            position: absolute;
+            left: 1073px;
+            z-index: 9;
+            background: url('../img/sprite.png') no-repeat scroll -1275px 5px;
+
+            .wrapmap {
+                top: -176px !important;
+                left: -1069px !important;
+                
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+        #kreml, .kreml {
+            width: 535px;
+            height: 365px;
+            overflow: hidden;
+            top: -4px;
+            position: absolute;
+            left: 755px;
+            z-index: 8;
+            background: url('../img/sprite.png') no-repeat scroll 5px -423px;
+
+            .wrapmap {
+                top: 0px !important;
+                left: -751px !important;
+
+                canvas {
+                    left: 0px !important;
+                    top: 2px !important;
+                }
+            }
+        }
+
+        #park {
+            position: absolute;
+            width: 475px;
+            height: 280px;
+            background: url('../img/sprite.png') no-repeat scroll -537px -687px transparent;
+            left: 406px;
+            top: 253px;
+            position: relative;
+            z-index: 30;
+        }
+
+        #carousel, .carousel {
+            width: 95px;
+            height: 110px;
+            overflow: hidden;
+            top: 71px;
+            position: absolute;
+            left: 86px;
+            z-index: 8;
+            background: url('../img/sprite.png') no-repeat scroll -791px -580px;
+
+            .wrapmap {
+                top: -324px !important;
+                left: -497px !important;
+
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+        #fountain, .fountain {
+            width: 95px;
+            height: 95px;
+            overflow: hidden;
+            top: 87px;
+            position: absolute;
+            left: 199px;
+            z-index: 10;
+            background: url('../img/sprite.png') no-repeat scroll -972px -578px;
+
+            .wrapmap {
+                top: -351px !important;
+                left: -604px !important;
+
+                canvas {
+                    left: -4px !important;
+                    top: 14px !important;
+                }
+            }
+        }
+
+        #kiosk, .kiosk {
+            width: 80px;
+            height: 85px;
+            overflow: hidden;
+            top: 37px;
+            position: absolute;
+            left: 254px;
+            z-index: 10;
+            background: url('../img/sprite.png') no-repeat scroll -884px -593px;
+
+            .wrapmap {
+                top: -286px !important;
+                left: -664px !important;
+
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+        #policestation, .policestation {
+            width: 200px;
+            height: 204px;
+            overflow: hidden;
+            top: 143px;
+            position: absolute;
+            left: 221px;
+            z-index: 36;
+            background: url('../img/sprite.png') no-repeat scroll -189px -165px;
+
+            .wrapmap {
+                top: -160px !important;
+                left: -219px !important;
+
+                canvas {
+                    left: -3px !important;
+                    top: 18px !important;
+                }
+            }
+
+        }
+
+        #whitehouse, .whitehouse {
+            width: 287px;
+            height: 246px;
+            overflow: hidden;
+            top: 70px;
+            position: absolute;
+            left: 321px;
+            z-index: 35;
+            background: url('../img/sprite.png') no-repeat scroll -991px -6px;
+
+            .wrapmap {
+                top: -69px !important;
+                left: -322px !important;
+
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+        #store, .store {
+            width: 200px;
+            height: 210px;
+            overflow: hidden;
+            top: 5px;
+            position: absolute;
+            left: 542px;
+            z-index: 34;
+            background: url('../img/sprite.png') no-repeat scroll 10px -182px;
+
+            .wrapmap {
+                top: -4px !important;
+                left: -543px !important;
+
+                canvas {
+                    left: 0px !important;
+                    top: 0px !important;
+                }
+            }
+        }
+
+
+    }
+
+
+}
